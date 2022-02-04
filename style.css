@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    /* background-color:red; */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choice-bar {
+    padding: 10px 50px;
+    border-radius: 6px;
+    background-color: rgba(96, 96, 96, 0.149);
+    border: 2px solid black;
+    margin: 10px 0px;
+    box-shadow: 10px 12px 15px -1px rgba(0, 0, 0, 0.82);
+}
+
+.present-txt {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+}
+
+.choice-btn {
+    display: flex;
+    justify-content: space-between;
+}
+
+.choice-btn button[name="number"],
+.choice-btn button[name="name"]  {
+    width: 100px;
+    margin: 10px 10px;
+    background: none;
+    color: black;
+    box-shadow: 0px 0px 8px 3px rgba(0, 0, 0, 0.82);
+}
+
+#number-picker {
+    margin-top: 20px;
+    border: 2px solid black;
+    margin: 10px 0px;
+    padding: 10px 62px;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+#number-picker input[type="submit"]{
+    width: 30%;
+    background-color:rgba(0, 0, 0, 0.802);
+    color: white;
+}
+
+#name-picker {
+    margin-top: 20px;
+    position:relative;
+    border: 2px solid black;
+    margin: 10px 0px;
+    padding: 10px 74px;
+    border-radius: 6px;
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.add {
+    position: absolute;
+    left: 76%;
+    bottom: 64.5%;
+    transform: translateX(-50%);
+}
+
+#name-picker input[type="submit"]{
+    width: 30%;
+    background-color:rgba(0, 0, 0, 0.802);
+    color: white;
+}
+
+#line {
+    display: flex;
+    flex-direction: column;
+}

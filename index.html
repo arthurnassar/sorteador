@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorteador</title>
+    <link href="./style.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <section class="choice-bar">
+            <div class="present-txt">
+                <h1>Sorteador</h1>
+                <p>Escolha o tipo de sorteio</p>
+            </div>
+            <div class="choice-btn">
+                <button id="number" name="number">Sorteio <br> por números</button>
+                <button id="name" name="name">Sorteio <br> por nome</button>
+            </div>
+        </section>
+        <!-- Esta sessão será ativada apenas quando o botão number for clicado -->
+        <section id="number-picker">
+            <p>Insira a quantidade de números</p>
+            <input id="number-input" type="number" id="numbers">
+            <input id="submit-number" type="submit" value="sortear">
+            <!-- Esse elemento só deve aparecer quando o submit for pressionado -->
+            <h2 id="number-result"></h2>
+        </section>
+
+        <section id="name-picker">
+            <p>Insira os nomes</p>
+            <div id="line">
+                <input class="nomes" type="text">
+            </div>
+            <button id="add-btn">+</button>
+            <input id="submit-name" type="submit" value="sortear">
+            <!-- Esse elemento só deve aparecer quando o submit for pressionado -->
+            <h2 id="name-result"></h2>
+        </section>
+        <template class="temp1">
+            <div id="line">
+                <input class="nomes" type="text">
+            </div>
+        </template>
+</body>
+
+<script src="./main.js"></script>
+</html>
